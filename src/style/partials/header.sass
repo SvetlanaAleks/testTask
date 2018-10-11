@@ -1,0 +1,40 @@
+.header
+	background: url(../img/header_back.jpg) no-repeat center top
+	background-size: cover
+	padding-top: 30px
+	.nav
+		font-family: 'PFDinDisplayPro-Bold', Arial, Helvetica, sans-serif
+		font-weight: 700
+		text-align: right
+		&--top
+			margin-bottom: 40px
+			.nav__link
+				&:not(:last-of-type)
+					margin-right: 30px
+		&__link
+			text-decoration: none
+			text-transform: uppercase
+			font-size: 13px
+			color: $grey
+			transition: color .3s
+			&--active
+				color: $hover-link
+			&:hover
+				color: $hover-link
+		&--bottom
+			display: flex
+			justify-content: flex-end
+			font-family: 'PFDinDisplayPro-Regular', Arial, Helvetica, sans-serif
+			margin-bottom: 110px
+			.nav__link
+				display: inline-block
+				padding: 0 50px
+				line-height: 15px
+				max-width: 96px
+				box-sizing: content-box
+				text-align: left
+				vertical-align: top
+				&:first-child
+					padding-left: 0
+				&:not(:last-of-type)
+					border-right: 1px solid rgba(85, 85, 85, .2)
