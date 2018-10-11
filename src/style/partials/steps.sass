@@ -1,43 +1,43 @@
 .step
 	padding-top: 130px
-	background-color: $hover-link
+	background-color: $cloudy-blue
 	padding-bottom: 140px
 	.wrap
 		display: flex
 		justify-content: space-between
 		font-size: 21px
-		color: $greyish-brown
-	&__item
-		counter-increment: section
-		position: relative
-		padding-left: 45px
-		&:not(:last-of-type)
-			margin-right: 30px
-		&::after
-			content: '0' counter(section)
-			display: block
-			position: absolute
-			font-size: 40px
-			font-weight: 900
-			top: 0
-			left: 0
-			transform: rotate(-90deg)
-			color: #fefefe
-		&::before
-			content: ''
-			display: block
-			position: absolute
-			width: 1px
-			background-color: #fefefe
-			top: 60px
-			left: 33px
-			bottom: 0
-		.title
-			white-space: nowrap
-			margin-bottom: 15px
-			font-family: 'PFDinDisplayPro-Bold', Arial, Helvetica, sans-serif
-			font-weight: bold
-			text-transform: uppercase
-		.text
-			font-family: 'PFDinDisplayPro-Thin', Arial, Helvetica, sans-serif
-			line-height: 36px
+		counter-reset: section
+		&__item
+			counter-increment: section
+			position: relative
+			padding-left: 45px
+			&:not(:last-of-type)
+				margin-right: 30px
+			&::after
+				content: '0' counter(section)
+				display: block
+				position: absolute
+				font-size: 40px
+				font-weight: 900
+				top: 0
+				left: 0
+				transform: rotate(-90deg)
+				color: #fefefe
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				width: 1px
+				background-color: #fefefe
+				top: 60px
+				left: 33px
+				bottom: 0
+			.title
+				white-space: nowrap
+				margin-bottom: 15px
+				font-family: 'PFDinDisplayPro-Bold', Arial, Helvetica, sans-serif
+				font-weight: bold
+				text-transform: uppercase
+			.text
+				font-family: 'PFDinDisplayPro-Thin', Arial, Helvetica, sans-serif
+				line-height: 36px
