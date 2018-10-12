@@ -1,0 +1,68 @@
+.foot
+	background-color: $black
+	padding-top: 80px
+	padding-bottom: 42px
+	&__title
+		font-size: 36px
+		text-transform: uppercase
+		letter-spacing: 21.6px
+		text-align: center
+		font-family: 'PFDinDisplayPro-ExtraThin', Arial, Helvetica, sans-serif
+		position: relative
+		padding-bottom: 50px
+		margin-bottom: 75px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			width: 1px
+			height: 30px
+			opacity: 0.7
+			bottom: 0
+			right: 50%
+			transform: translateX(50%)
+			background-color: $greyish-brown
+	.link
+		text-decoration: none
+	&__wrap
+		display: flex
+		justify-content: space-around
+		margin-bottom: 150px
+	.item
+		&:not(:last-of-type)
+			margin-bottom: 50px
+		&__content
+			color: $warm-grey
+			font-family: 'PFDinDisplayPro-Medium', Arial, Helvetica, sans-serif
+			font-size: 28px
+		&__title
+			position: relative
+			font-size: 18px
+			letter-spacing: 3.6px
+			font-family: 'PFDinDisplayPro-Thin', Arial, Helvetica, sans-serif
+			text-transform: uppercase
+			padding-left: 35px
+			display: block
+			margin-bottom: 15px
+			.fico
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				color: $greyish-brown-two
+	&__copyright
+		padding-left: 30px
+		.text
+			font-size: 16px
+			letter-spacing: 0.8px
+			color: rgba(70, 70, 70, 0.44)
+			font-family: 'PFDinDisplayPro-Thin', Arial, Helvetica, sans-serif
+		.wrap
+			float: right
+			position: relative
+			.text
+				padding-right: 30px
+			.icon
+				position: absolute
+				right: 0
+				top: 0

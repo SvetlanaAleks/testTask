@@ -23,28 +23,30 @@
 			right: 50%
 			transform: translateX(50%)
 			background-color: $greyish-brown
-	.flights
-		text-transform: uppercase
-		font-family: 'PFDinDisplayPro-Medium', Arial, Helvetica, sans-serif
-		font-size: 64px
-		text-align: center
-		line-height: 1.13
-		padding-bottom: 45px
-		position: relative
-		margin-bottom: 120px
-		&::after
-			content: ''
-			display: block
-			position: absolute
-			bottom: 0
-			right: 50%
-			transform: translateX(50%)
-			width: 0
-			height: 0
-			border-style: solid
-			border-width: 18px 15.5px 0 15.5px
-			border-color: $cloudy-blue transparent transparent transparen
-	&__btn
+.flights
+	text-transform: uppercase
+	font-family: 'PFDinDisplayPro-Medium', Arial, Helvetica, sans-serif
+	font-size: 64px
+	text-align: center
+	line-height: 1.13
+	padding-bottom: 45px
+	position: relative
+	margin-bottom: 120px
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		right: 50%
+		transform: translateX(50%)
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 18px 15.5px 0 15.5px
+		border-color: $cloudy-blue transparent transparent transparent
+.center
+	text-align: center
+	.btn
 		text-transform: uppercase
 		border-radius: 2px
 		border: solid 1px rgba(255, 255, 255, 0.35)
@@ -57,6 +59,7 @@
 		padding: 20px 40px
 		min-width: 181px
 		position: relative
+		display: inline-block
 		&::after
 			content: ''
 			display: block
@@ -69,8 +72,6 @@
 			right: 20px
 			top: 50%
 			transform: translateY(-50%)
-.button
-	text-align: center
 .table
 	width: 100%
 	max-width: 1216px
